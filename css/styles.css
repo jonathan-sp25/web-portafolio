@@ -1,5 +1,5 @@
 :root {
-    --color-dark-blue: #1F213A;
+    --color-dark-blue: #171721;
     --color-blue: #386ECC;
 
     --color-black: #000000;
@@ -47,4 +47,129 @@
 
 body {
     font-family: var(--font-family);
+    background-color: var(--color-dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-top: 64px;
+    width: 80%;
+}
+
+main {
+    width: 80%;
+    margin-bottom: 64px;
+}
+
+header p {
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+.hero-section {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0;
+}
+
+.hero-text {
+    grid-column: span 1;
+}
+
+.hero-image {
+    grid-column: span 1;
+}
+
+.hero-actions {
+    grid-column: span 2;
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.hero-scroll-indicator {
+    grid-column: span 2;
+}
+
+.hero-text h1 {
+    color: var(--color-white);
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero-text h2 {
+    color: var(--color-blue);
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+.hero-text p {
+    color: var(--color-white);
+    font-size: 24px;
+    margin-right: 104px;
+    margin-bottom: 64px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-linkedin {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+.hero-github {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+.hero-email {
+    display: flex;
+    height: 48px;
+    width: auto;
+}
+
+.hero-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 0;
+    border: none;
+    font-size: 20px;
+    color: var(--color-white);
+    background-color: var(--color-white-10p);
+}
+
+.hero-btn {
+    cursor: pointer;
+}
+
+.hero-email-text {
+    width: 432px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white-5p);
+}
+
+.hero-email-text p {
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+.hero-scroll-indicator {
+    margin-bottom: 64px;
+}
+
+.hero-scroll-indicator p {
+    font-size: 24px;
+    color: var(--color-white);
+    text-align: center;
 }
