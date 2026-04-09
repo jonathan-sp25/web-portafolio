@@ -68,6 +68,8 @@ header p {
     font-size: 20px;
 }
 
+/* SECCION HERO */
+
 .hero-section {
     margin-top: 64px;
     display: grid;
@@ -172,4 +174,124 @@ header p {
     font-size: 24px;
     color: var(--color-white);
     text-align: center;
+}
+
+/* SECCION PROJECTS */
+
+.projects-section {
+    margin-top: 64px;
+}
+
+.section-header {
+    margin-bottom: 32px;
+}
+
+.section-header p {
+    color: var(--color-white);
+    font-size: 40px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0;
+    margin-bottom: 32px;
+    background-color: var(--color-white-2_5p);
+}
+
+.project-image {
+    position: relative;
+    width: 85%;
+    height: auto;
+    margin: 5% 5% 5% 10%;
+}
+
+.project-image img {
+    width: 100%;
+    display: block;
+}
+
+.project-btn {
+    position: absolute;
+    bottom: 2.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+}
+
+.project-btn button {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+}
+
+.project-btn button:hover {
+    cursor: pointer;
+}
+
+.project-btn .btn-demo {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
+
+.project-btn .btn-detail {
+    color: var(--color-black);
+    background-color: var(--color-white-20p);
+    border: solid 1px var(--color-black);
+}
+
+.project-btn button:first-child {
+    margin-right: 20px;
+}
+
+
+.project-text {
+    margin: 5% 10% 5% 5%;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.project-title i {
+    font-size: 24px;
+    margin-right: 16px;
+    color: var(--color-blue);
+}
+
+.project-title p {
+    font-size: 24px;
+    color: var(--color-blue);
+}
+
+.project-content {
+    margin-bottom: 16px;
+}
+
+.project-content p {
+    font-size: 20px;
+    color: var(--color-white);
+    margin-bottom: 8px;
+}
+
+.project-tags {
+    display: flex;
+}
+
+.project-tags .tag {
+    font-size: 16px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    color: var(--color-white);
+    background-color: var(--color-white-10p);
 }
