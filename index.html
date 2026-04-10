@@ -172,14 +172,14 @@
             </div>
 
             <div class="profile-section">
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <img src="assets/img/Foto.svg" alt="Imagen-Perfil" />
-                    </div>
-                    <div class="profile-title">
-                        <p>Estudiante de 10.º ciclo</p>
-                        <p>Ingeniería de Sistemas e Informática</p>
-                    </div>
+
+                <div class="profile-image">
+                    <img src="assets/img/Foto.svg" alt="Imagen-Perfil" />
+                </div>
+
+                <div class="profile-text">
+                    <p>Estudiante de 10.º ciclo</p>
+                    <p>Ingeniería de Sistemas e Informática</p>
                 </div>
 
                 <div class="profile-description">
@@ -191,8 +191,10 @@
             </div>
 
             <div class="education-section">
-                <div class="education-title">
+                <div class="education-icon">
                     <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="education-title">
                     <p>ESTUDIOS</p>
                 </div>
                 <div class="education-item">
@@ -201,8 +203,10 @@
             </div>
 
             <div class="experience-section">
-                <div class="experience-title">
+                <div class="experience-icon">
                     <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="experience-title">
                     <p>EXPERIENCIA</p>
                 </div>
                 <div class="experience-item">
@@ -216,14 +220,19 @@
             </div>
 
             <div class="skills-section">
-                <div class="skills-title">
+                <div class="skills-icon">
                     <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="skills-title">
+
                     <p>HABILIDADES TÉCNICAS</p>
                 </div>
-
                 <div class="skill-group">
-                    <i class="fa-solid fa-code"></i>
-                    <p>Lenguajes:</p>
+                    <div class="tags-title">
+                        <i class="fa-solid fa-code"></i>
+                        <p>Lenguajes:</p>
+                    </div>
+
                     <div class="tags">
                         <div class="tag">
                             <p>HTML</p>
@@ -244,8 +253,11 @@
                 </div>
 
                 <div class="skill-group">
-                    <i class="fa-solid fa-database"></i>
-                    <p>Bases de Datos:</p>
+                    <div class="tags-title">
+                        <i class="fa-solid fa-database"></i>
+                        <p>Bases de Datos:</p>
+                    </div>
+
                     <div class="tags">
                         <div class="tag">
                             <p>MySQL</p>
@@ -257,8 +269,11 @@
                 </div>
 
                 <div class="skill-group">
-                    <i class="fa-solid fa-puzzle-piece"></i>
-                    <p>Frameworks y Librerías:</p>
+                    <div class="tags-title">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                        <p>Frameworks y Librerías:</p>
+                    </div>
+
                     <div class="tags">
                         <div class="tag">
                             <p>Laravel</p>
@@ -273,8 +288,11 @@
                 </div>
 
                 <div class="skill-group">
-                    <i class="fa-solid fa-sitemap"></i>
-                    <p>Arquitectura y Desarrollo:</p>
+                    <div class="tags-title">
+                        <i class="fa-solid fa-sitemap"></i>
+                        <p>Arquitectura y Desarrollo:</p>
+                    </div>
+
                     <div class="tags">
                         <div class="tag">
                             <p>MVC</p>
@@ -286,8 +304,11 @@
                 </div>
 
                 <div class="skill-group">
-                    <i class="fa-solid fa-pen-ruler"></i>
-                    <p>Diseño y Modelado:</p>
+                    <div class="tags-title">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <p>Diseño y Modelado:</p>
+                    </div>
+
                     <div class="tags">
                         <div class="tag">
                             <p>UML</p>
@@ -302,8 +323,11 @@
                 </div>
 
                 <div class="skill-group">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    <p>Herramientas y Despliegue:</p>
+                    <div class="tags-title">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <p>Herramientas y Despliegue:</p>
+                    </div>
+
                     <div class="tags">
                         <div class="tag">
                             <p>GitHub</p>
@@ -327,8 +351,11 @@
                 </div>
 
                 <div class="skill-group">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <p>Metodologias:</p>
+                    <div class="tags-title">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <p>Metodologias:</p>
+                    </div>
+
                     <div class="tags">
                         <div class="tag">
                             <p>Design Thinking</p>
@@ -341,8 +368,10 @@
             </div>
 
             <div class="soft-skills-section">
-                <div class="soft-skills-title">
+                <div class="soft-skills-icon">
                     <i class="fa-regular fa-lightbulb"></i>
+                </div>
+                <div class="soft-skills-title">
                     <p>HABILIDADES BLANDAS</p>
                 </div>
                 <div class="soft-skill-item">
@@ -354,22 +383,24 @@
             </div>
 
             <div class="contact-section">
-                <div class="contact-title">
+                <div class="contact-icon">
                     <i class="fa-solid fa-address-book"></i>
+                </div>
+                <div class="contact-title">
                     <p>CONTACTO</p>
                 </div>
                 <div class="contact-actions">
                     <div class="btn-email">
-                        <button><i class="fa-solid fa-envelope"></i></button>
+                        <button class="contact-btn"><i class="fa-solid fa-envelope"></i></button>
                     </div>
                     <div class="email-text">
                         <p>jonathan.sanchez.perez25@gmail.com</p>
                     </div>
                     <div class="btn-copy">
-                        <button><i class="fa-solid fa-copy"></i></button>
+                        <button class="contact-btn"><i class="fa-solid fa-copy"></i></button>
                     </div>
                     <div class="btn-send">
-                        <button><i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="contact-btn"><i class="fa-solid fa-paper-plane"></i></button>
                     </div>
                 </div>
             </div>
