@@ -63,7 +63,7 @@ main {
     margin-bottom: 64px;
 }
 
-header p {
+header h1 {
     color: var(--color-white);
     font-size: 20px;
 }
@@ -89,6 +89,8 @@ header p {
     grid-column: span 2;
     display: flex;
     margin-bottom: 64px;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .hero-scroll-indicator {
@@ -123,14 +125,12 @@ header p {
     display: flex;
     width: 48px;
     height: 48px;
-    margin-right: 20px;
 }
 
 .hero-github {
     display: flex;
     width: 48px;
     height: 48px;
-    margin-right: 20px;
 }
 
 .hero-email {
@@ -154,16 +154,19 @@ header p {
 }
 
 .hero-email-text {
-    width: 432px;
+    max-width: 432px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--color-white-5p);
+
+    padding: 8px 16px;
 }
 
 .hero-email-text p {
     font-size: 20px;
     color: var(--color-white);
+    word-break: break-all;
 }
 
 .hero-scroll-indicator {
@@ -220,11 +223,11 @@ header p {
 
 .project-btn {
     position: absolute;
-    bottom: 2.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 15%;
     z-index: 10;
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .project-btn button {
@@ -302,13 +305,14 @@ header p {
     margin-top: 64px;
 }
 
-.profile-section {
-    padding: 32px 64px 32px 64px;
+.container-section {
     display: grid;
     grid-template-columns: 100px 1fr;
+    gap: 16px;
     font-size: 20px;
     color: var(--color-white);
     background-color: var(--color-white-2_5p);
+    padding: 32px 64px 32px 64px;
     margin-bottom: 32px;
 }
 
@@ -329,16 +333,6 @@ header p {
     font-size: 20px;
 }
 
-.education-section {
-    padding: 32px 64px 32px 64px;
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    font-size: 20px;
-    color: var(--color-white);
-    background-color: var(--color-white-2_5p);
-    margin-bottom: 32px;
-}
-
 .education-title {
     margin-bottom: 16px;
 }
@@ -347,32 +341,12 @@ header p {
     grid-row: span 2;
 }
 
-.experience-section {
-    padding: 32px 64px 32px 64px;
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    font-size: 20px;
-    color: var(--color-white);
-    background-color: var(--color-white-2_5p);
-    margin-bottom: 32px;
-}
-
 .experience-title {
     margin-bottom: 16px;
 }
 
 .experience-icon {
     grid-row: span 3;
-}
-
-.skills-section {
-    padding: 32px 64px 32px 64px;
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    font-size: 20px;
-    color: var(--color-white);
-    background-color: var(--color-white-2_5p);
-    margin-bottom: 32px;
 }
 
 .skills-icon {
@@ -400,6 +374,8 @@ header p {
 
 .tags {
     display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
     margin-bottom: 16px;
 }
 
@@ -408,16 +384,7 @@ header p {
     font-size: 18px;
     padding: 5px 15px;
     background-color: var(--color-white-10p);
-}
-
-.soft-skills-section {
-    padding: 32px 64px 32px 64px;
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    font-size: 20px;
-    color: var(--color-white);
-    background-color: var(--color-white-2_5p);
-    margin-bottom: 32px;
+    white-space: nowrap;
 }
 
 .soft-skills-title {
@@ -426,16 +393,6 @@ header p {
 
 .soft-skills-icon {
     grid-row: span 2;
-}
-
-.contact-section {
-    padding: 32px 64px 32px 64px;
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    font-size: 20px;
-    color: var(--color-white);
-    background-color: var(--color-white-2_5p);
-    margin-bottom: 32px;
 }
 
 .contact-title {
@@ -449,18 +406,8 @@ header p {
 .contact-actions {
     display: flex;
     width: 100%;
-}
-
-.btn-email {
-    margin-right: 16px;
-}
-
-.btn-copy {
-    margin-right: 16px;
-}
-
-.btn-send {
-    margin-right: 16px;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .contact-btn {
@@ -471,14 +418,88 @@ header p {
     border-radius: 0;
     border: none;
     font-size: 20px;
+}
 
+.contact-btn {
+    cursor: pointer;
 }
 
 .email-text {
-    width: 100%;
+    width: auto;
+    min-height: 48px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     background-color: var(--color-white-5p);
-    margin-right: 16px;
 }
+
+.email-text p {
+    word-break: break-all;
+    padding: 8px 16px;
+}
+
+@media (max-width: 1280px) {
+
+    /* SECCION HERO */
+    .hero-section {
+        grid-template-columns: none;
+        grid-template-rows: auto;
+    }
+
+    .hero-text {
+        grid-column: span 1;
+    }
+
+    .hero-image {
+        grid-column: span 1;
+        margin-bottom: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-actions {
+        grid-column: span 1;
+    }
+
+    .hero-scroll-indicator {
+        grid-column: span 1;
+    }
+
+    .hero-image img {
+        width: 60%;
+    }
+
+    /* SECCION PROJECT */
+
+    .project-card {
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+        gap: 0;
+    }
+
+    .project-image {
+        margin: 5% 5% 0 5%;
+        width: 90%;
+    }
+
+    .project-text {
+        margin: 2.5% 5% 5% 5%;
+    }
+
+    /* SECCION ABOUT */
+
+    .container-section {
+        grid-template-columns: 64px 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* SECCION HERO */
+    .hero-email-text {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {}
