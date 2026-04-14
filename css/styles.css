@@ -502,4 +502,54 @@ header h1 {
     }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+    header {
+        margin-top: 24px;
+        width: 90%;
+    }
+
+    main {
+        width: 90%;
+        margin-bottom: 24px;
+    }
+
+    /* SECCION HERO */
+
+    .hero-section {
+        margin-top: 16px;
+    }
+
+    .hero-actions {
+        margin-bottom: 32px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+
+    .hero-text h2 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+        margin-right: 32px;
+        margin-bottom: 16px;
+    }
+
+    .hero-image {
+        margin-bottom: 32px;
+    }
+
+    .hero-image img{
+        width: 100%;
+    }
+
+    .hero-scroll-indicator p {
+        font-size: 20px;
+    }
+
+}
