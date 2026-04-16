@@ -544,7 +544,7 @@ header h1 {
         margin-bottom: 32px;
     }
 
-    .hero-image img{
+    .hero-image img {
         width: 100%;
     }
 
@@ -552,4 +552,39 @@ header h1 {
         font-size: 20px;
     }
 
+    /* SECCION PROJECTS */
+
+    .projects-section {
+        margin-top: 32px;
+    }
+
+    .section-header p {
+
+        font-size: 32px;
+    }
+
+    .project-btn button {
+        padding: 5px 15px;
+    }
+
+    .project-text {
+        margin: 5% 5% 5% 5%;
+    }
+
+    .project-title i {
+        font-size: 20px;
+    }
+
+    .project-title p {
+        font-size: 20px;
+    }
+
+    .project-content p {
+        font-size: 18px;
+    }
+
+    .project-tags .tag {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
 }
