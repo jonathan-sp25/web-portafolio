@@ -255,7 +255,6 @@ header h1 {
     margin-right: 20px;
 }
 
-
 .project-text {
     margin: 5% 10% 5% 5%;
 }
@@ -507,6 +506,7 @@ header h1 {
     header {
         margin-top: 24px;
         width: 90%;
+        padding: 0 16px;
     }
 
     main {
@@ -518,6 +518,7 @@ header h1 {
 
     .hero-section {
         margin-top: 16px;
+        padding: 0 16px;
     }
 
     .hero-actions {
@@ -546,6 +547,10 @@ header h1 {
 
     .hero-image img {
         width: 100%;
+    }
+
+    .hero-scroll-indicator {
+        margin-bottom: 32px;
     }
 
     .hero-scroll-indicator p {
@@ -587,4 +592,80 @@ header h1 {
         font-size: 16px;
         padding: 4px 8px;
     }
+
+    /* SECCION ABOUT */
+
+    .about-section {
+        margin-top: 32px;
+    }
+
+    .container-section {
+        gap: 8px;
+        font-size: 18px;
+        grid-template-columns: 48px 1fr;
+        padding: 16px 24px;
+        margin-bottom: 16px;
+    }
+
+    .profile-image img {
+        width: 48px;
+    }
+
+    .profile-text {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .profile-description {
+        font-size: 18px;
+    }
+
+    .education-title {
+        margin-bottom: 8px;
+    }
+
+    .experience-title {
+        margin-bottom: 8px;
+    }
+
+    .skills-title {
+        margin-bottom: 8px;
+    }
+
+    .tags-title {
+        margin-bottom: 8px;
+    }
+
+    .tags {
+        gap: 8px;
+    }
+
+    .tag {
+        margin-right: 0;
+        font-size: 16px;
+        padding: 4px 12px;
+    }
+
+    .soft-skills-title {
+        margin-bottom: 8px;
+    }
+
+    .contact-title {
+        margin-bottom: 8px;
+    }
+
+    .contact-actions {
+        gap: 8px;
+    }
+
+    .contact-actions .btn-email {
+        display: none;
+    }
+
+    .contact-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+    }
+
 }
