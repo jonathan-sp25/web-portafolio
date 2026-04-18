@@ -1,11 +1,19 @@
 :root {
     --color-dark-blue: #171721;
+    --color-dark-blue-10p: #1717211A;
+    --color-dark-blue-20p: #17172133;
+    --color-dark-blue-50p: #17172180;
+
     --color-blue: #386ECC;
+    --color-blue-10p: #386ECC1A;
+    --color-blue-20p: #386ECC33;
+    --color-blue-50p: #386ECC80;
 
     --color-black: #000000;
     --color-black-5p: #0000000D;
     --color-black-10p: #0000001A;
     --color-black-20p: #00000033;
+    --color-black-50p: #00000080;
 
     --color-white: #ffffff;
     --color-white-1p: #ffffff03;
@@ -147,10 +155,13 @@ header h1 {
     font-size: 20px;
     color: var(--color-white);
     background-color: var(--color-white-10p);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.hero-btn {
-    cursor: pointer;
+.hero-btn:hover {
+    background-color: var(--color-white-50p);
+    color: var(--color-black);
 }
 
 .hero-email-text {
@@ -234,6 +245,7 @@ header h1 {
     padding: 10px 15px;
     font-size: 18px;
     border: none;
+    transition: all 0.3s ease;
 }
 
 .project-btn button:hover {
@@ -245,10 +257,19 @@ header h1 {
     background-color: var(--color-blue);
 }
 
+.project-btn .btn-demo:hover {
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+}
+
 .project-btn .btn-detail {
     color: var(--color-black);
-    background-color: var(--color-white-20p);
-    border: solid 1px var(--color-black);
+    background-color: var(--color-black-20p);
+}
+
+.project-btn .btn-detail:hover {
+    color: var(--color-white);
+    background-color: var(--color-black-50p);
 }
 
 .project-btn button:first-child {
@@ -417,10 +438,13 @@ header h1 {
     border-radius: 0;
     border: none;
     font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.contact-btn {
-    cursor: pointer;
+.contact-btn:hover {
+    background-color: var(--color-white-50p);
+    color: var(--color-black);
 }
 
 .email-text {
@@ -459,6 +483,7 @@ header h1 {
 
     .hero-actions {
         grid-column: span 1;
+        justify-content: center;
     }
 
     .hero-scroll-indicator {
@@ -491,6 +516,10 @@ header h1 {
     .container-section {
         grid-template-columns: 64px 1fr;
     }
+
+    .contact-actions .btn-email {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -499,6 +528,7 @@ header h1 {
     .hero-email-text {
         display: none;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -560,11 +590,15 @@ header h1 {
     /* SECCION PROJECTS */
 
     .projects-section {
-        margin-top: 32px;
+        margin-top: 16px;
+    }
+
+    .section-header {
+        margin-bottom: 16px;
     }
 
     .section-header p {
-
+        padding: 0 16px;
         font-size: 32px;
     }
 
@@ -596,7 +630,7 @@ header h1 {
     /* SECCION ABOUT */
 
     .about-section {
-        margin-top: 32px;
+        margin-top: 16px;
     }
 
     .container-section {
@@ -608,7 +642,7 @@ header h1 {
     }
 
     .profile-image img {
-        width: 48px;
+        width: 40px;
     }
 
     .profile-text {
@@ -658,12 +692,8 @@ header h1 {
         gap: 8px;
     }
 
-    .contact-actions .btn-email {
-        display: none;
-    }
-
     .contact-btn {
-        width: 48px;
+        width: 96px;
         height: 48px;
         font-size: 18px;
     }
