@@ -1,0 +1,117 @@
+:root {
+    --color-dark-blue: #171721;
+    --color-dark-blue-10p: #1717211A;
+    --color-dark-blue-20p: #17172133;
+    --color-dark-blue-50p: #17172180;
+
+    --color-blue: #386ECC;
+    --color-blue-10p: #386ECC1A;
+    --color-blue-20p: #386ECC33;
+    --color-blue-50p: #386ECC80;
+
+    --color-black: #000000;
+    --color-black-5p: #0000000D;
+    --color-black-10p: #0000001A;
+    --color-black-20p: #00000033;
+    --color-black-50p: #00000080;
+
+    --color-white: #ffffff;
+    --color-white-1p: #ffffff03;
+    --color-white-2_5p: #ffffff06;
+    --color-white-5p: #ffffff0D;
+    --color-white-10p: #ffffff1A;
+    --color-white-20p: #ffffff33;
+    --color-white-50p: #ffffff80;
+
+    --color-background: var(--color-dark-blue);
+    --color-text: var(--color-white);
+    --color-primary: var(--color-blue);
+
+    --font-family: "Poppins", sans-serif;
+    --font-size-1: 12px;
+    --font-size-2: 14px;
+    --font-size-3: 16px;
+    --font-size-4: 20px;
+    --font-size-5: 24px;
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --space-5: 32px;
+    --space-6: 48px;
+    --space-7: 64px;
+    --space-8: 96px;
+    --space-9: 128px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-top: 64px;
+    width: 80%;
+}
+
+main {
+    width: 80%;
+    margin-bottom: 64px;
+}
+
+header h1 {
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+/* SECCION DETAILS */
+
+.detail-section {
+    margin-top: 64px;
+}
+
+.section-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 16px;
+}
+
+.section-header i {
+    color: var(--color-white);
+    font-size: 48px;
+}
+
+.section-header h1 {
+    color: var(--color-white);
+    font-size: 48px;
+}
+
+.header-back{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.header-title{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.section-details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0;
+}
