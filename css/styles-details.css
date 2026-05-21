@@ -143,3 +143,75 @@ header h1 {
     padding: 32px 64px 32px 64px;
     margin-bottom: 32px;
 }
+
+.text-details {}
+
+.text-details i {
+    margin-right: 16px;
+}
+
+.text-details-description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.text-details-description-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-details-description-content {
+    font-size: 20px;
+}
+
+.text-details-type {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.text-details-type-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-details-date {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.text-details-date-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-details-demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.text-details-demo button {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    padding: 16px 96px;
+    margin: 16px 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.text-details-demo button:hover {
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+}
