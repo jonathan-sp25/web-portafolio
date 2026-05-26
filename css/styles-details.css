@@ -114,12 +114,6 @@ header h1 {
 .section-details {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 0;
-}
-
-.section-details {
-    display: grid;
-    grid-template-columns: 50% 50%;
     gap: 16px;
     font-size: 20px;
     color: var(--color-white);
@@ -127,24 +121,6 @@ header h1 {
     padding: 32px 64px 32px 64px;
     margin-bottom: 32px;
 }
-
-.section-architecture {
-    font-size: 20px;
-    color: var(--color-white);
-    background-color: var(--color-white-2_5p);
-    padding: 32px 64px 32px 64px;
-    margin-bottom: 32px;
-}
-
-.section-functions {
-    font-size: 20px;
-    color: var(--color-white);
-    background-color: var(--color-white-2_5p);
-    padding: 32px 64px 32px 64px;
-    margin-bottom: 32px;
-}
-
-.text-details {}
 
 .text-details i {
     margin-right: 16px;
@@ -214,4 +190,53 @@ header h1 {
 .text-details-demo button:hover {
     color: var(--color-white);
     background-color: var(--color-dark-blue);
+}
+
+.section-architecture {
+    font-size: 20px;
+    color: var(--color-white);
+    background-color: var(--color-white-2_5p);
+    padding: 32px 64px 32px 64px;
+    margin-bottom: 32px;
+}
+
+.section-architecture div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.section-architecture div:last-child{
+    margin-bottom: 0px;
+}
+
+.section-architecture div i{
+    margin-right: 16px;
+}
+
+.section-functions {
+    font-size: 20px;
+    color: var(--color-white);
+    background-color: var(--color-white-2_5p);
+    padding: 32px 64px 32px 64px;
+    margin-bottom: 32px;
+}
+
+.section-functions div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.section-functions div:last-child{
+    margin-bottom: 0px;
+}
+
+.section-functions div i{
+    margin-right: 16px;
+}
+
+.text-title {
+    font-size: 24px;
+    font-weight: bold;
 }
