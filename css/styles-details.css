@@ -200,17 +200,17 @@ header h1 {
     margin-bottom: 32px;
 }
 
-.section-architecture div{
+.section-architecture div {
     display: flex;
     align-items: center;
     margin-bottom: 16px;
 }
 
-.section-architecture div:last-child{
+.section-architecture div:last-child {
     margin-bottom: 0px;
 }
 
-.section-architecture div i{
+.section-architecture div i {
     margin-right: 16px;
 }
 
@@ -222,17 +222,17 @@ header h1 {
     margin-bottom: 32px;
 }
 
-.section-functions div{
+.section-functions div {
     display: flex;
     align-items: center;
     margin-bottom: 16px;
 }
 
-.section-functions div:last-child{
+.section-functions div:last-child {
     margin-bottom: 0px;
 }
 
-.section-functions div i{
+.section-functions div i {
     margin-right: 16px;
 }
 
@@ -241,33 +241,49 @@ header h1 {
     font-weight: bold;
 }
 
-@media (max-width: 1280px) {
-
-}
+@media (max-width: 1280px) {}
 
 
-@media (max-width: 768px) {
-
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 480px) {
     header {
-    margin-top: 32px;
-}
+        margin-top: 32px;
+        width: 90%;
+    }
 
-.section-header {
-    margin-bottom: 32px;
-}
+    main {
+        width: 90%;
+        margin-bottom: 32px;
+    }
 
-.detail-section {
-    margin-top: 16px;
-}
+    .section-header {
+        margin-bottom: 32px;
+    }
 
-.section-header i{
-    font-size: 32px;
-}
+    .detail-section {
+        margin-top: 16px;
+    }
 
-.section-header h1 {
-    font-size: 32px;
-}
+    .section-header i {
+        font-size: 32px;
+    }
+
+    .section-header h1 {
+        font-size: 32px;
+    }
+
+    .section-details{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 32px 16px 32px;
+    }
+
+     .section-details img {
+        width: 100%;
+        height: auto;
+
+     }
+
 }
