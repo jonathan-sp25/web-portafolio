@@ -64,13 +64,11 @@ body {
 header {
     margin-top: 64px;
     width: 80%;
-    padding: 0 16px;
 }
 
 main {
     width: 80%;
     margin-bottom: 64px;
-    padding: 0 16px;
 }
 
 header h1 {
@@ -121,6 +119,16 @@ header h1 {
     color: var(--color-white);
     background-color: var(--color-white-2_5p);
     margin-bottom: 32px;
+    padding: 32px 64px 32px 64px;
+}
+
+.img-details{
+    width: 100%;
+}
+
+.img-details img {
+    width: 100%;
+    height: auto;
 }
 
 .text-details i {
@@ -242,15 +250,22 @@ header h1 {
     font-weight: bold;
 }
 
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+    .section-details {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
 
 
 @media (max-width: 768px) {}
 
 @media (max-width: 480px) {
     header {
-        margin-top: 32px;
+        margin-top: 24px;
         width: 90%;
+        padding: 0 16px;
     }
 
     main {
@@ -260,6 +275,7 @@ header h1 {
 
     .section-header {
         margin-bottom: 32px;
+        gap: 8px;
     }
 
     .detail-section {
@@ -275,15 +291,20 @@ header h1 {
     }
 
     .section-details {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        padding: 32px;
+        padding: 16px 24px;
     }
 
     .section-details img {
         width: 100%;
         height: auto;
+    }
+
+    .section-architecture {
+        padding: 16px 24px;
+    }
+
+    .section-functions {
+        padding: 16px 24px;
     }
 
 }
